@@ -3,7 +3,6 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import styled from '@emotion/styled';
 import { createPost, getPostById, updatePostById } from '../api';
 import { TAG } from '../api/types';
-import {create} from "axios";
 
 const TitleInput = styled.input`
   display: block;
@@ -153,7 +152,7 @@ const Write = () => {
         <Editor value={content} onChange={handleChangeContent} placeholder="내용을 입력하세요" />
       </div>
       <BottomSheet>
-        <Link>
+        <Link to="/">
           <ExitButton>나가기</ExitButton>
         </Link>
         <SaveButton onClick={clickConfirm}>저장하기</SaveButton>

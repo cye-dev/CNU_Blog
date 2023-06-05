@@ -5,7 +5,6 @@ import { deletePostById, getPostById } from '../api';
 import { IPost } from '../api/types';
 import NotFound from '../components/NotFound';
 import Tag from '../components/Tag';
-import {request} from "axios";
 
 const Title = styled.h1`
   font-size: 3rem;
