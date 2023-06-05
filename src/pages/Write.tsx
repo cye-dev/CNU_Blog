@@ -134,11 +134,11 @@ const Write = () => {
     setTitle(event.target.value);
   };
 
-  const handleChangeContent = (event: ChangeEvent<HTMLInputElement>) => {
+  const handleChangeContent = (event: ChangeEvent<HTMLTextAreaElement>) => {
     setContent(event.target.value);
   };
 
-  const handleChangeTag = (event: ChangeEvent<HTMLInputElement>) => {
+  const handleChangeTag = (event: ChangeEvent<HTMLSelectElement>) => {
     setTag(event.target.value as TAG);
   };
   return (
