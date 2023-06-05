@@ -60,8 +60,7 @@ const Text = styled.p`
 `;
 
 const Post = () => {
-  const params = useParams();
-  const { postId } = params;
+  const { postId } = useParams() as { postId: string };
   const [post, setPost] = useState<IPost | null>(null);
   const navigate = useNavigate();
 
