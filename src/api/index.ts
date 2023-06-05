@@ -34,6 +34,6 @@ export const updatePostById = (id: string, title: string, contents: string, tag:
   });
 };
 
-export const deletePostById = () => {
-  return null;
+export const deletePostById = (id: string) => {
+  return instance.delete(`/posts/${id}`);
 };
