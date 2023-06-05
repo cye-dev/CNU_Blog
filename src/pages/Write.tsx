@@ -98,7 +98,7 @@ const Write = () => {
     const { data } = await getPostById(postId);
     const { post } = data;
     setTitle(post.title);
-    setContent(post.content);
+    setContent(post.contents);
     setTag(post.tag);
   };
 

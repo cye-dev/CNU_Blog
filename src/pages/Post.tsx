@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import styled from '@emotion/styled';
 import { deletePostById, getPostById } from '../api';
-import { IAdvertisement, IPost } from '../api/types';
+import { IPost } from '../api/types';
 import NotFound from '../components/NotFound';
 import Tag from '../components/Tag';
 import {request} from "axios";
@@ -92,6 +92,7 @@ const Post = () => {
     return <NotFound />;
   }
 
+  // todo (4) post 컴포넌트 작성
   return (
     <div style={{ margin: '5.5rem auto', width: '700px' }}>
       <div>
